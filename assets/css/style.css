@@ -1,0 +1,92 @@
+@import url(../css/clash-display.css);
+
+
+/*
+CODE BELOW
+These lines define custom CSS variables inside the :root pseudo-class, 
+which allows these variables to be accessed globally within the stylesheet. 
+*/
+:root {
+    --c-dark: #212529;
+    --c-brand: #4e57d4;
+    --c-brand-light: #6970dd;
+    --c-brand-rgb: 78, 87, 212;
+    --c-body: #727272;
+    --font-base: "ClashDisplay", "sans-serif";
+    --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
+    --transition: all 0.5s ease;
+}
+
+/*
+CODE BELOW
+This styles the body element, setting its font family to the value of the 
+custom variable --font-base.
+*/
+body {
+    font-family: var(--font-base);
+    line-height: 1.7;
+    color: var(--c-body);
+}
+
+/*
+CODE BELOW
+This rule sets the font weight of all heading elements (h1 to h6) and 
+elements with class names .h1 to .h6 to a bold weight of 600.
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-weight: 600;
+}
+
+/*
+CODE BELOW
+This rule styles anchor elements (<a>) by removing the default underline 
+(text-decoration: none;), setting the text color to the value of the custom 
+variable --c-brand, and applying a transition effect defined by the custom 
+variable --transition.
+*/
+a {
+    text-decoration: none;
+    color: var(--c-brand);
+    transition: var(--transition);
+}
+
+/*
+CODE BELOW
+This rule changes the text color of anchor elements when hovered over to 
+the value of the custom variable --c-brand-light.
+*/
+a:hover {
+    color: var(--c-brand-light);
+}
+
+/*
+CODE BELOW
+This rule ensures that images (<img>) within the webpage are responsive 
+by setting their maximum width to 100% of their container width and allowing 
+their height to adjust proportionally.
+*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+CODE BELOW
+This rule defines a class .section-padding which adds vertical padding of 
+140 pixels at the top and bottom of elements with this class.
+*/
+.section-padding {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
