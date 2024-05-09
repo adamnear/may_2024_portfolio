@@ -127,3 +127,10 @@ This rule defines a class .section-padding which adds vertical padding of
     border-color: var(--c-brand-light);
     color: white;
 }
+
+/* HERO */
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(var(--c-brand-rgb), 0.3)), url("../images/hero/heroimg1.jpg");
+    background-position: center;
+    background-size: cover;
+}
