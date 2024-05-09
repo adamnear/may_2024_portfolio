@@ -49,6 +49,7 @@ h6,
 .h5,
 .h6 {
     font-weight: 600;
+    color: var(--c-dark);
 }
 
 /*
@@ -94,6 +95,10 @@ This rule defines a class .section-padding which adds vertical padding of
     padding-bottom: 140px;
 }
 
+.theme-shadow {
+    box-shadow: var(--box-shadow)
+}
+
 /* NAVBAR */
 .navbar {
     box-shadow: var(--box-shadow);
@@ -133,4 +138,71 @@ This rule defines a class .section-padding which adds vertical padding of
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(var(--c-brand-rgb), 0.3)), url("../images/hero/heroimg1.jpg");
     background-position: center;
     background-size: cover;
+}
+
+/* SECTION TITLE */
+.section-title {
+    margin-bottom: 60px;
+}
+
+.section-title .line {
+    width: 60px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin: 16px auto 24px auto;
+}
+
+.section-title p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ICONBOx */
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--c-brand-rgb), 0.1);
+    color: var(--c-brand);
+    font-size: 34px;
+    flex: none;
+}
+
+/* SERVICE */
+.service {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.service::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: rgba(var(--c-brand-rgba), 0.2);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: var(--transition);
+}
+
+.service:hover::after {
+    width: 100%;
+    height: 100%;
+    background: var(--c-brand);
+    z-index: -1;
+}
+
+.service:hover h5,
+.service:hover p {
+    color: white;
+}
+
+.service:hover,
+.iconbox {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
 }
