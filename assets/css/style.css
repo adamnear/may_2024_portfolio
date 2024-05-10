@@ -171,7 +171,7 @@ This rule defines a class .section-padding which adds vertical padding of
     flex: none;
 }
 
-/* SERVICE */
+/* SKILLS */
 .service {
     position: relative;
     overflow: hidden;
@@ -202,7 +202,19 @@ This rule defines a class .section-padding which adds vertical padding of
 }
 
 .service:hover,
-.iconbox {
+.skillsbox {
     background-color: rgba(255, 255, 255, 0.2);
     color: white;
+}
+
+.skillsbox {
+    width: 100px;
+    height: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--c-brand-rgb), 0.1);
+    color: var(--c-brand);
+    font-size: 34px;
+    flex: none;
 }
