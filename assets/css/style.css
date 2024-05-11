@@ -99,6 +99,25 @@ This rule defines a class .section-padding which adds vertical padding of
     box-shadow: var(--box-shadow)
 }
 
+/* IMAGE ZOOM */
+.image-zoom {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-zoom-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.image-zoom-wrapper img {
+    transition: var(--transition);
+}
+
+.image-zoom:hover .image-zoom-wrapper img {
+    transform: scale(1.1);
+}
+
 /* NAVBAR */
 .navbar {
     box-shadow: var(--box-shadow);
@@ -202,19 +221,44 @@ This rule defines a class .section-padding which adds vertical padding of
 }
 
 .service:hover,
-.skillsbox {
-    background-color: rgba(255, 255, 255, 0.2);
+.skillslogo {
+    /* background-color: rgba(255, 255, 255, 0.2); */
     color: white;
 }
 
-.skillsbox {
+.skillslogo {
     width: 100px;
     height: 100px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: rgba(var(--c-brand-rgb), 0.1);
+    /* background: rgba(var(--c-brand-rgb), 0.1); */
     color: var(--c-brand);
     font-size: 34px;
     flex: none;
+}
+
+.skillsbox {
+    height: 300px;
+    display: inline-block;
+    /* Ensure elements appear next to each other */
+    margin-bottom: 20px;
+    /* Add margin between elements */
+    box-sizing: border-box;
+}
+
+/* PORTFOLIO */
+.portfolio-item .iconbox {
+    background-color: var(--c-brand);
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.portfolio-item:hover .iconbox {
+    opacity: 1;
+    top: 50%;
 }
