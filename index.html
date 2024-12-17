@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg bg-white sticky-top">
         <div class="container">
             <a class="navbar-brand " href="#">
-                <img src="./assets/images/logo/circle/websitelogo2.png" alt="" class="img-fluid"
+                <img src="./assets/images/profilepic/MeSquare.jpg" alt="" class="img-fluid profile-image"
                     style="max-height: 100px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#hero">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About me</a>
@@ -40,7 +40,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#video">Video work</a>
                     </li>
                     <li class="nav-item">
@@ -48,7 +48,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+                    </li> -->
                 </ul>
                 <!--<a href="#" class="btn btn-brand">Download</a>-->
             </div>
@@ -63,8 +63,9 @@
                     <h1 class="text-uppercase text-white fw-semibold display-1">Welcome to my page</h1>
                     <h4 class="text-white mt-3 mb-4">ADAM NEARING</h4>
                     <div>
-                        <a href="#" class="btn btn-brand me-2">My work</a>
-                        <a href="#" class="btn btn-brand ms-2">Get in touch</a>
+                        <a href="#portfolio" class="btn btn-brand me-2">My work</a>
+                        <a href="mailto:adamrjnearing@gmail.com?subject=Hello!&body=I%20would%20like%20to%20get%20in%20touch."
+                            class="btn btn-brand ms-2">Get in touch</a>
                     </div>
                 </div>
             </div>
@@ -107,35 +108,44 @@
                         team. I am driven to adapt quickly and contribute meaningfully to any project I undertake.
                     </p>
                     <div class="d-flex pt-4 mb-3">
-                        <div class="iconbox me-4">
-                            <i class="ri-mail-send-line"></i>
-                        </div>
+                        <a href="mailto:adamrjnearing@gmail.com?subject=Hello!&body=I%20would%20like%20to%20get%20in%20touch."
+                            target="_blank">
+                            <div class="iconbox me-4">
+                                <i class="ri-mail-send-line"></i>
+                            </div>
+                        </a>
                         <div>
-                            <h5>Contact</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet felis massa.
-                                Integer
+                            <h5>Email me</h5>
+                            <p>
+                                You can reach me at adamnearing14@gmail.com
                             </p>
                         </div>
                     </div>
                     <div class="d-flex mb-3">
-                        <div class="iconbox me-4">
-                            <i class="ri-user-5-fill"></i>
-                        </div>
+                        <a href="https://www.linkedin.com/in/adamrjnearing/" target="_blank"
+                            style="text-decoration: none; color: inherit;">
+                            <div class="iconbox me-4">
+                                <i class="ri-user-5-fill"></i>
+                            </div>
+                        </a>
                         <div>
-                            <h5>Contact</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet felis massa.
-                                Integer
+                            <h5>Find me on LinkedIn</h5>
+                            <p>
+                                Connect with me to chat more!
                             </p>
                         </div>
                     </div>
                     <div class="d-flex">
-                        <div class="iconbox me-4">
-                            <i class="ri-rocket-2-fill"></i>
-                        </div>
+                        <a href="https://github.com/adamnear" target="_blank"
+                            style="text-decoration: none; color: inherit;">
+                            <div class="iconbox me-4">
+                                <i class="ri-rocket-2-fill"></i>
+                            </div>
+                        </a>
                         <div>
-                            <h5>Contact</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet felis massa.
-                                Integer
+                            <h5>Check out my work on GitHub</h5>
+                            <p>
+                                See what I've been working on through my time at NSCC.
                             </p>
                         </div>
                     </div>
@@ -144,8 +154,34 @@
         </div>
     </section>
 
+    <!-- RESUME -->
+    <section id="resume" class="section-padding border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Resume</h1>
+                        <div class="line"></div>
+                        <p>For a detailed overview of my professional journey, skills, and projects, feel free to view
+                            my resume.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 text-center mt-4">
+                    <a href="https://drive.google.com/file/d/134Bq-DjvnBt_Bdy1ndfXzd3AXKXr0XX0/view" target="_blank"
+                        class="btn btn-primary btn-lg">
+                        View My Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- SKILLS -->
-    <section id="services" class="section-padding border-top">
+    <section id="skills" class="section-padding border-top">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -328,71 +364,217 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="portfolio-item image-zoom">
-                        <div class="image-zoom-wrapper">
-                            <img src="./assets/images/progwork/collectioncrud.png" alt="">
+            <div class="container">
+
+                <!-- First Row for Project 1 -->
+                <div class="row mb-5">
+                    <!-- Project Image -->
+                    <div class="col-md-3">
+                        <div class="portfolio-item image-zoom">
+                            <div class="image-zoom-wrapper">
+                                <img src="./assets/images/progwork/BookGlide1.png" alt="" class="img-fluid">
+                            </div>
+                            <a href="./assets/images/progwork/BookGlide1.png" data-fancybox="gallery" class="iconbox">
+                                <i class="ri-search-2-line"></i>
+                            </a>
                         </div>
-                        <a href="./assets/images/progwork/collectioncrud.png" data-fancybox="gallery" class="iconbox"><i
-                                class="ri-search-2-line"></i></a>
+                        <div class="portfolio-item image-zoom">
+                            <div class="image-zoom-wrapper">
+                                <img src="./assets/images/progwork/BookGlide2.png" alt="" class="img-fluid">
+                            </div>
+                            <a href="./assets/images/progwork/BookGlide2.png" data-fancybox="gallery" class="iconbox">
+                                <i class="ri-search-2-line"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="about-project-reflection">
+                    <!-- About This Project -->
+                    <div class="col-md-3">
                         <h4>About this project</h4>
-                        <p>This project is designed to enhance the buyer's experience at a mock record store. It
-                            provides
-                            a seamless interface for browsing, searching, and purchasing records while emphasizing an
-                            intuitive and enjoyable shopping experience.</p>
+                        <p>This project was a collaboration to create a 3D interactive magazine-like book. The model
+                            allows users to glide through the pages and manipulate the book in 3D space, offering an
+                            engaging and visually dynamic way to explore content.</p>
                     </div>
-
-                    <div class="personal-reflection">
-                        <h4>Personal Reflection</h4>
-                        <p>This project allowed me to deepen my understanding of CRUD operations and strengthen my
-                            skills
-                            in developing user-friendly interfaces. It also reinforced the importance of aligning
-                            technical
-                            solutions with user needs to create an impactful experience.</p>
+                    <!-- Personal Reflection -->
+                    <div class="col-md-3">
+                        <h4>Personal reflection</h4>
+                        <p>This project helped me deepen my understanding of Three.js and interactive 3D modeling.
+                            Collaborating with another student enhanced my teamwork skills and gave me a greater
+                            appreciation for designing user-focused, immersive experiences.</p>
                     </div>
-
-                    <div class="next-steps-reflection">
+                    <!-- Next Steps -->
+                    <div class="col-md-3">
                         <h4>Next steps for this project</h4>
-                        <p>As this was a school assignment, my next steps will be to expand my knowledge in areas such
-                            as
-                            advanced front-end development and responsive design to further enhance the user experience
-                            in future projects. I also plan to explore integrating payment gateways and more complex
-                            database
-                            structures for e-commerce applications.</p>
+                        <p>Looking ahead, I plan to explore adding clickable interactive elements within the pages
+                            to further enhance user engagement.</p>
                     </div>
+                </div>
+                <!-- GitHub Link Section -->
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <a href="https://github.com/Bahkho/BookGlide" target="_blank" class="btn btn-primary">
+                            Click here to see full code on GitHub
+                        </a>
+                    </div>
+                </div>
 
-                    <div class="portfolio-item image-zoom">
-                        <div class="image-zoom-wrapper">
-                            <img src="./assets/images/progwork/Relaxation Space.png" alt="">
+                <!-- First Row for Project 2 -->
+                <div class="row mb-5">
+                    <!-- Project Image -->
+                    <div class="col-md-3">
+                        <div class="portfolio-item image-zoom">
+                            <div class="image-zoom-wrapper">
+                                <img src="./assets/images/progwork/ParkBuddy2.png" alt="" class="img-fluid">
+                            </div>
+                            <a href="./assets/images/progwork/ParkBuddy2.png" data-fancybox="gallery" class="iconbox">
+                                <i class="ri-search-2-line"></i>
+                            </a>
                         </div>
-                        <a href="./assets/images/progwork/Relaxation Space.png" data-fancybox="gallery"
-                            class="iconbox"><i class="ri-search-2-line"></i></a>
                     </div>
-                    <div class="about-project-reflection"></div>
-                    <h4>About this project</h4>
-                    <p>This project is a customizable page where users can select from a library of nature soundscapes
-                        and mix them with musical performances by the company's artists. The goal is to create a unique
-                        and relaxing audio experience, blending the tranquility of nature with the creativity of music.
-                    </p>
-                    <div class="personal-reflection">
+                    <!-- About This Project -->
+                    <div class="col-md-3">
+                        <h4>About this project</h4>
+                        <p>This project was an idea of mine that came to life through a semester long capstone project.
+                            The goal was to assist HRM residents in being aware of street cleaning schedules in their
+                            area,
+                            as a way to save the time and be able to park with confidence of not resieving a ticket.
+                        </p>
+                    </div>
+                    <!-- Personal Reflection -->
+                    <div class="col-md-3">
+                        <h4>Personal reflection</h4>
+                        <p>As project manager of this application, I oversaw all parts of the development and had taken
+                            care of any prep work, research and presenting of materials. This was a great exercise in
+                            managing a
+                            project andensuring clear communication between team members, meeting deadlines, and
+                            delivering
+                            a cohesive and functional application. It allowed me to refine my leadership skills and
+                            develop
+                            a deeper understanding of the development lifecycle from concept to completion.
+
+                        </p>
+                    </div>
+                    <!-- Next Steps -->
+                    <div class="col-md-3">
+                        <h4>Next steps for this project</h4>
+                        <p>Myself and the team will continue to work on this project to allow for user account
+                            creations, which in turn will
+                            let users upload the parking restrictions on their street. The goal for this application is
+                            for it to be an open sourced
+                            platform, so the database can grow to cover many streets in the HRM.
+                        </p>
+                    </div>
+                </div>
+                <!-- GitHub Link Section -->
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <a href="https://github.com/NSCC-ITProgramming-2023Winter/ParkBuddy" target="_blank"
+                            class="btn btn-primary">
+                            Click here to see full code on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Second Row for Project 3 -->
+                <div class="row">
+                    <!-- Project Image -->
+                    <div class="col-md-3">
+                        <div class="portfolio-item image-zoom">
+                            <div class="image-zoom-wrapper">
+                                <img src="./assets/images/progwork/IMDB1.png" alt="" class="img-fluid">
+                            </div>
+                            <a href="./assets/images/progwork/IMDB1.png" data-fancybox="gallery" class="iconbox">
+                                <i class="ri-search-2-line"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio-item image-zoom">
+                            <div class="image-zoom-wrapper">
+                                <img src="./assets/images/progwork/IMDB2.png" alt="" class="img-fluid">
+                            </div>
+                            <a href="./assets/images/progwork/IMDB2.png" data-fancybox="gallery" class="iconbox">
+                                <i class="ri-search-2-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>About this project</h4>
+                        <p>This group project involved building a multi-page web application for browsing and searching
+                            the IMDb database. Using C# and SQL, we collaborated to create four pages where users can
+                            search for Movies, Actors, Writers, or Directors, with each page displaying relevant data
+                            dynamically.</p>
+                    </div>
+                    <!-- Personal Reflection -->
+                    <div class="col-md-3">
+                        <h4>Personal Reflection</h4>
+                        <p>This project allowed me to strengthen my skills in back-end development with C# and SQL while
+                            improving my ability to work collaboratively within a team. I gained valuable experience in
+                            designing database queries and integrating them seamlessly into the application to deliver
+                            accurate and efficient results for users.</p>
+                    </div>
+                    <!-- Next Steps -->
+                    <div class="col-md-3">
+                        <h4>Next Steps for This Project</h4>
+                        <p>For future development, I plan to enhance the project by adding features such as filtering
+                            and sorting results, as well as incorporating a more dynamic and responsive front-end to
+                            improve the overall user experience.</p>
+                    </div>
+                    <!-- GitHub Link Section -->
+                    <div class="row mb-5">
+                        <div class="col-12 text-center">
+                            <a href="https://github.com/NSCC-ITProgramming-2023Winter/IMDB-Explorer" target="_blank"
+                                class="btn btn-primary">
+                                Click here to see full code on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Row for Project 3 -->
+                <div class="row">
+                    <!-- Project Image -->
+                    <div class="col-md-3">
+                        <div class="portfolio-item image-zoom">
+                            <div class="image-zoom-wrapper">
+                                <img src="./assets/images/progwork/Relaxation Space.png" alt="" class="img-fluid">
+                            </div>
+                            <a href="./assets/images/progwork/Relaxation Space.png" data-fancybox="gallery"
+                                class="iconbox">
+                                <i class="ri-search-2-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- About This Project -->
+                    <div class="col-md-3">
+                        <h4>About this project</h4>
+                        <p>This project is a customizable page where users can select from a library of nature
+                            soundscapes and mix them with musical performances by the company's artists. The goal is to
+                            create a unique and relaxing audio experience, blending the tranquility of nature with the
+                            creativity of music.</p>
+                    </div>
+                    <!-- Personal Reflection -->
+                    <div class="col-md-3">
                         <h4>Personal reflection</h4>
                         <p>Working on the Relaxation Space project taught me the importance of incorporating mindfulness
                             and simplicity into application design. This project emphasized how thoughtful design
                             choices can improve user well-being.</p>
                     </div>
-                    <div class="next-steps-reflection">
+                    <!-- Next Steps -->
+                    <div class="col-md-3">
                         <h4>Next steps for this project</h4>
                         <p>The company has recognized the value of this project and plans to archive my work as a
-                            foundation for future development.
-                            Upcoming co-op students will build upon this groundwork, ensuring the project continues to
-                            evolve and meet organizational goals.</p>
+                            foundation for future development. Upcoming co-op students will build upon this groundwork,
+                            ensuring the project continues to evolve and meet organizational goals.</p>
                     </div>
-
+                    <!-- GitHub Link Section -->
+                    <div class="row mb-5">
+                        <div class="col-12 text-center">
+                            <p>
+                                All rights reserved to Little Symphony Inc. Unfortunetly I cannot share the repo.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <!-- <div class="row">
                 <div class="col-md-4">
                     <div class="portfolio-item image-zoom">

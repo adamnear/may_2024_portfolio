@@ -99,6 +99,17 @@ This rule defines a class .section-padding which adds vertical padding of
     box-shadow: var(--box-shadow)
 }
 
+.profile-image {
+    max-height: 100px;
+    /* Set the desired size */
+    max-width: 100px;
+    /* Ensure the width and height are equal */
+    border-radius: 50%;
+    /* Makes the image a circle */
+    object-fit: cover;
+    /* Ensures the image scales properly inside the circle */
+}
+
 /* IMAGE ZOOM */
 .image-zoom {
     position: relative;
@@ -308,3 +319,5 @@ This rule defines a class .section-padding which adds vertical padding of
     object-fit: cover;
     border-radius: 50%;
 }
+
+/* CODE WORK SECTION */
